@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Exchange Challenge 2019</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Exchange Challenge 2019</a>
+    </div>
+  </nav>
+
+  
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h3 class="header center orange-text">Select exchange currencies</h3>
+
+      <div class="row center">
+
+            <div class="col s7">
+              <h5>
+                <!-- Dropdown Trigger -->
+                Exchange from
+                  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Select</a>
+                to
+                  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Select</a>
+              </h5>
+              <a href="#" id="exchanged-button" class="btn-large waves-effect waves-light orange" style="margin-top: 20px">Exchange</a>
+            </div>
+
+            <div class="col s5">
+              <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Real time exchange rate</span>
+                      <h3>0.452623</h3>
+                      <p>From Select to Select</p>
+                  </div>
+              </div>
+            </div>
+   
+      </div>
+      <div id="pokaz"><p>Tutaj jakieś dane wywalam: </p></div>
+      <!-- <br>*Wykresy nie aktualizują się w czasie rzeczywistym, ze wzglęgu na ograniczoną ilość zapytań (500 na dzień)<br> -->
+    </div>
+  </div>
+
+  <div id="chartContainer"></div>
+
+
+  <!-- <footer class="page-footer orange" style="position:fixed;bottom:0;left:0;width:100%;">
+    <div class="footer-copyright">
+      <div class="container center">
+        <p>Michał Pusio created project in <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a></p>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">USD</a></li>
+    <li><a href="#!">JPY</a></li>
+    <li><a href="#!">PLN</a></li>
+  </ul>
+
+  <!--  Scripts Materialize-->
+  <script src="js/chartcanvas.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  
+
+  </body>
+</html>
